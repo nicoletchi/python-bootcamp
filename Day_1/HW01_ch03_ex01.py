@@ -13,7 +13,10 @@
 #                                                                  monty
 ###############################################################################
 # Write your function below:
-# Body
+
+def right_justify(s):
+    numberSpaces = 60 - len(s)
+    print(" "*numberSpaces + s)
 
 
 # Write your function above:

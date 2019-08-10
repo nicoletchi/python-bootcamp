@@ -28,7 +28,19 @@
 # There should be only two statements in the body of this function, not four.
 ###############################################################################
 # Write your functions below:
-# Body
+
+def do_twice(f, v):
+    f(v)
+    f(v)
+    return 
+
+def print_twice(v):
+    print(v)
+    print(v)
+
+def do_four(f, v):
+    do_twice(f, v)
+    do_twice(f, v)
 
 
 # Write your functions above:
@@ -38,8 +50,9 @@ def main():
     When complete have one function call in this function:
     do_four(print_twice, [some_value])
     """
-    print("Hello World!")
-
+    
+    do_twice(print_twice, "spam")
+    do_four(print_twice, "cake")
 
 if __name__ == "__main__":
     main()
