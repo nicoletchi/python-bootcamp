@@ -1,0 +1,4 @@
+# we will add files that we want git to ignore here
+pbc/*
+
+yourFile.py
